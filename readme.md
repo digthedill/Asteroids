@@ -1,6 +1,6 @@
 ## Asteroids
 
-View incoming asteroids from your phone! View data from NASA! Simply select the date and browse the daily close calls.
+View incoming asteroids from your phone with data sourced directly from NASA! Simply select a date and browse the daily close calls.
 
 ### Get Started Locally
 
