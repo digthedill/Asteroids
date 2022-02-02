@@ -2,7 +2,7 @@ const collectData = async (
   date: string,
   setData: React.Dispatch<React.SetStateAction<never[]>>,
   setLoading: React.Dispatch<React.SetStateAction<boolean>>
-): Promise<void> => {
+) => {
   setLoading(true);
   try {
     let apiKey = "2zcSAHeiiktxliyCHz2eVVzGfUpwPsFqTX97WquF";
@@ -29,8 +29,9 @@ const collectData = async (
     setData(formattedAsteroid);
   } catch (err) {
     throw new Error("Can not fetch data from NASA");
+  } finally {
+    setLoading(false);
   }
-  setLoading(false);
 };
 
 const averageDiameter = (obj: DiameterObj) => {
