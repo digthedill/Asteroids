@@ -1,14 +1,15 @@
 ## Asteroids
 
-View incoming asteroids from your phone! Simply select the date and browse the daily close calls .
+View incoming asteroids from your phone! Simply select the date and browse the daily close calls.
 
-### Get Started
+### Get Started Locally
 
-1. Clone repo and cd to root dir
-2. $ npm install --global expo-cli
-3. $ npm start
+1. Clone repo and cd to root directory
+2. Install expo-cli $ npm install --global expo-cli
+3. Install dep $ npm install
+4. Run the app $ npm start
 
-### Preview Demo
+### Preview App
 
 1. Download expo go on your mobile device
 2. https://expo.dev/@digthedill/asteroids
