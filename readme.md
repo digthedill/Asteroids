@@ -31,3 +31,5 @@ npm start
 #### Other
 
 Decided to explore React Native with Typescript. I don't claim to be an expert so sorry if something isn't considered 'best practice'.
+
+Tested on Android Emulator and my personal iPhone.

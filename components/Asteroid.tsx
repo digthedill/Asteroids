@@ -46,7 +46,7 @@ const Asteroid: React.FC<Props> = ({ item }) => {
       </View>
       <View style={styles.emojiContent}>
         <Text style={{ fontWeight: item.dangerous ? "bold" : "normal" }}>
-          {item.dangerous ? "Dangerously close" : "Not too close"}
+          {item.dangerous ? "Potentially Hazardous" : "Not too close"}
         </Text>
         <Text style={styles.emoji}>{item.dangerous ? "😨" : "😉"}</Text>
       </View>
