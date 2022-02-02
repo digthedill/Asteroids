@@ -3,7 +3,7 @@ import { View, StyleSheet, Text } from "react-native";
 const Footer: React.FC = () => {
   return (
     <View style={styles.contianer}>
-      <Text style={styles.text}>Dillon Kelley</Text>
+      <Text style={styles.text}>Created by Dillon Kelley</Text>
     </View>
   );
 };
