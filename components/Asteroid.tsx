@@ -1,6 +1,8 @@
 import { useRef, useEffect } from "react";
 import { Text, StyleSheet, Animated, View } from "react-native";
+import prettifyNumber from "../utils/prettifyNumber";
 import { AsteroidType } from "../utils/types";
+
 interface Props {
   item: AsteroidType;
 }
@@ -25,10 +27,21 @@ const Asteroid: React.FC<Props> = ({ item }) => {
       ]}
     >
       <View style={styles.infoContent}>
-        <Text style={styles.title}>Name: {item.name}</Text>
-        <Text>Diameter: {item.diameter}ft</Text>
-        <Text>Miss Distance: {item.missDistance}mi</Text>
-        <Text>Speed: {item.speed}mph</Text>
+        <Text style={{ fontSize: 18 }}>{item.name}</Text>
+        <Text>
+          Diameter:{" "}
+          <Text style={styles.bold}>{prettifyNumber(item.diameter)} ft</Text>
+        </Text>
+        <Text>
+          Miss Distance:{" "}
+          <Text style={styles.bold}>
+            {prettifyNumber(item.missDistance)} mi
+          </Text>
+        </Text>
+        <Text>
+          Speed:{" "}
+          <Text style={styles.bold}>{prettifyNumber(item.speed)} mph</Text>
+        </Text>
       </View>
       <View style={styles.emojiContent}>
         <Text style={{ fontWeight: item.dangerous ? "bold" : "normal" }}>
@@ -55,9 +68,8 @@ const styles = StyleSheet.create({
     width: "50%",
   },
 
-  title: {
+  bold: {
     fontWeight: "700",
-    fontSize: 16,
   },
   emoji: {
     fontSize: 50,

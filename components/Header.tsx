@@ -1,15 +1,13 @@
 import { Text, View, StyleSheet } from "react-native";
-import {
-  PressStart2P_400Regular,
-  useFonts,
-} from "@expo-google-fonts/press-start-2p";
 
 const Header: React.FC = () => {
-  const [fontsLoaded] = useFonts({ PressStart2P_400Regular });
   return (
     <View style={styles.container}>
       <Text style={{ ...styles.title, fontFamily: "PressStart2P_400Regular" }}>
         Asteroids
+      </Text>
+      <Text style={{ color: "white", fontFamily: "PressStart2P_400Regular" }}>
+        Press Date to Play
       </Text>
     </View>
   );

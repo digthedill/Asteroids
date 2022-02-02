@@ -1,11 +1,11 @@
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 
-type Props = {
+interface Props {
   setDate: Function;
   setShowDate: Function;
   date: Date;
   showDate: boolean;
-};
+}
 
 const DateInput: React.FC<Props> = ({
   setDate,
