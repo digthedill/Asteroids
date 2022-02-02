@@ -1,31 +1,34 @@
-import DateTimePicker from '@react-native-community/datetimepicker';
+import DateTimePickerModal from "react-native-modal-datetime-picker";
 
-interface Props {
-    setDate: Function,
-    setShowDate: Function,
-    date: Date
-}
+type Props = {
+  setDate: Function;
+  setShowDate: Function;
+  date: Date;
+  showDate: boolean;
+};
 
-const DateInput: React.FC<Props> = ({setDate, setShowDate, date}) => {
+const DateInput: React.FC<Props> = ({
+  setDate,
+  setShowDate,
+  date,
+  showDate,
+}) => {
+  const handleConfirm = (date: Date) => {
+    setDate(date);
+    hideDatePicker();
+  };
 
-    const onChange = (e: any, selectedDate: Date) => {
-        const currentDate = selectedDate || date;
-        // setShow(Platform.OS === 'ios');
-        setDate(currentDate);
-        setShowDate(false)
+  const hideDatePicker = () => setShowDate(false);
 
-    }
+  return (
+    <DateTimePickerModal
+      isVisible={showDate}
+      mode="date"
+      date={date}
+      onConfirm={handleConfirm}
+      onCancel={hideDatePicker}
+    />
+  );
+};
 
-    return (
-        <DateTimePicker
-          testID="dateTimePicker"
-          value={date}
-          mode={'date'}
-          is24Hour={true}
-          display="default"
-          onChange={onChange}
-        />
-    )
-}
-
-export default DateInput
+export default DateInput;
