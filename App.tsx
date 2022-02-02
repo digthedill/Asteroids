@@ -19,7 +19,7 @@ import { formatDate, prettifyDate } from "./utils/dates";
 import collectData from "./utils/api";
 import { AsteroidType } from "./utils/types";
 
-import { SLATE, WHITE } from "./styles/globalStyles";
+import { SLATE, WHITE, BLACK } from "./styles/globalStyles";
 
 export default function App() {
   const [date, setDate] = useState(new Date());
@@ -71,11 +71,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: SLATE,
+    backgroundColor: BLACK,
     alignItems: "center",
     justifyContent: "center",
   },
   content: {
+    backgroundColor: SLATE,
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
     flex: 6,
     width: "100%",
     padding: 10,
