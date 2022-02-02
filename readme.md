@@ -1,12 +1,12 @@
 ## Asteroids
 
-View incoming asteroids from your phone! Simply select the date and browse the daily close calls.
+View incoming asteroids from your phone! View data from NASA! Simply select the date and browse the daily close calls.
 
 ### Get Started Locally
 
 1. Clone repo and cd to root directory
 2. Install expo-cli $ npm install --global expo-cli
-3. Install dep $ npm install
+3. Install dependencies $ npm install
 4. Run the app $ npm start
 
 ### Preview App
