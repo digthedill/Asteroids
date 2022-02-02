@@ -5,9 +5,23 @@ View incoming asteroids from your phone with data sourced directly from NASA! Si
 ### Get Started Locally
 
 1. Clone repo and cd to root directory
-2. Install expo-cli $ npm install --global expo-cli
-3. Install dependencies $ npm install
-4. Run the app $ npm start
+2. Install expo-cli
+
+```bash
+npm install --global expo-cli
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Run the app
+
+```bash
+npm start
+```
 
 ### Preview App
 

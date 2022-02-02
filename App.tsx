@@ -16,7 +16,7 @@ import Asteroid from "./components/Asteroid";
 import DateInput from "./components/DateInput";
 
 import { formatDate, prettifyDate } from "./utils/dates";
-import collectData from "./utils/getData";
+import collectData from "./utils/api";
 import { AsteroidType } from "./utils/types";
 
 export default function App() {
