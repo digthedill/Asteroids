@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Text, StyleSheet, Animated, View } from "react-native";
 import prettifyNumber from "../utils/prettifyNumber";
 import { AsteroidType } from "../utils/types";
+import { WHITE, RED } from "../styles/globalStyles";
 
 interface Props {
   item: AsteroidType;
@@ -22,7 +23,7 @@ const Asteroid: React.FC<Props> = ({ item }) => {
         styles.container,
         {
           opacity: fadeAnim,
-          backgroundColor: item.dangerous ? "#ff795b" : "#fcfcfc",
+          backgroundColor: item.dangerous ? RED : WHITE,
         },
       ]}
     >

@@ -19,6 +19,8 @@ import { formatDate, prettifyDate } from "./utils/dates";
 import collectData from "./utils/api";
 import { AsteroidType } from "./utils/types";
 
+import { SLATE, WHITE } from "./styles/globalStyles";
+
 export default function App() {
   const [date, setDate] = useState(new Date());
   const [showDate, setShowDate] = useState(false);
@@ -38,7 +40,7 @@ export default function App() {
       <Header />
       <View style={styles.content}>
         <View style={styles.dateSelector}>
-          <Text style={{ marginRight: 10, color: "white" }}>
+          <Text style={{ marginRight: 10, color: WHITE }}>
             Choose Your Date:{" "}
           </Text>
           <Button
@@ -69,7 +71,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#263238",
+    backgroundColor: SLATE,
     alignItems: "center",
     justifyContent: "center",
   },

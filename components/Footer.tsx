@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
+import { WHITE, BLACK } from "../styles/globalStyles";
 
 const Footer: React.FC = () => {
   return (
@@ -15,10 +16,10 @@ const styles = StyleSheet.create({
     width: "100%",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#000a12",
+    backgroundColor: BLACK,
   },
   text: {
-    color: "white",
+    color: WHITE,
   },
 });
 

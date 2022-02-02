@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
+import { WHITE, BLACK } from "../styles/globalStyles";
 
 const Header: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ const Header: React.FC = () => {
       <Text style={{ ...styles.title, fontFamily: "PressStart2P_400Regular" }}>
         Asteroids
       </Text>
-      <Text style={{ color: "white", fontFamily: "PressStart2P_400Regular" }}>
+      <Text style={{ color: WHITE, fontFamily: "PressStart2P_400Regular" }}>
         Press Date to Play
       </Text>
     </View>
@@ -18,12 +19,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 2,
     width: "100%",
-    backgroundColor: "#000a12",
+    backgroundColor: BLACK,
     justifyContent: "center",
     alignItems: "center",
   },
   title: {
-    color: "white",
+    color: WHITE,
     fontSize: 35,
   },
 });

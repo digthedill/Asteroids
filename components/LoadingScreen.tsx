@@ -5,6 +5,8 @@ import {
   useFonts,
 } from "@expo-google-fonts/press-start-2p";
 
+import { BLACK, WHITE } from "../styles/globalStyles";
+
 const LoadingScreen: React.FC = () => {
   const [fontsLoaded] = useFonts({ PressStart2P_400Regular });
   const fadeAnim = useRef(new Animated.Value(0)).current;
@@ -39,11 +41,11 @@ const LoadingScreen: React.FC = () => {
 const styles = StyleSheet.create({
   title: {
     fontSize: 35,
-    color: "white",
+    color: WHITE,
   },
   container: {
     flex: 1,
-    backgroundColor: "#000a12",
+    backgroundColor: BLACK,
     alignItems: "center",
     justifyContent: "center",
   },
