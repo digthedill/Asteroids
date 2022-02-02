@@ -27,18 +27,18 @@ const Asteroid: React.FC<Props> = ({ item }) => {
       ]}
     >
       <View style={styles.infoContent}>
-        <Text style={{ fontSize: 18 }}>{item.name}</Text>
-        <Text>
+        <Text style={{ fontSize: 18, fontWeight: "bold" }}>{item.name}</Text>
+        <Text style={styles.infoLine}>
           Diameter:{" "}
           <Text style={styles.bold}>{prettifyNumber(item.diameter)} ft</Text>
         </Text>
-        <Text>
+        <Text style={styles.infoLine}>
           Miss Distance:{" "}
           <Text style={styles.bold}>
             {prettifyNumber(item.missDistance)} mi
           </Text>
         </Text>
-        <Text>
+        <Text style={styles.infoLine}>
           Speed:{" "}
           <Text style={styles.bold}>{prettifyNumber(item.speed)} mph</Text>
         </Text>
@@ -56,7 +56,8 @@ const Asteroid: React.FC<Props> = ({ item }) => {
 const styles = StyleSheet.create({
   container: {
     marginBottom: 10,
-    padding: 5,
+    paddingHorizontal: 5,
+    paddingVertical: 10,
     borderRadius: 10,
     flexDirection: "row",
   },
@@ -67,7 +68,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "35%",
   },
-
+  infoLine: {
+    paddingVertical: 3,
+  },
   bold: {
     fontWeight: "700",
   },
