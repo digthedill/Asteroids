@@ -62,11 +62,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   infoContent: {
-    width: "65%",
+    width: "60%",
   },
   emojiContent: {
     alignItems: "center",
-    width: "35%",
+    width: "40%",
   },
   infoLine: {
     paddingVertical: 3,
