@@ -11,7 +11,7 @@ View incoming asteroids from your phone! Simply select the date and browse the d
 ### Preview Demo
 
 1. Download expo go on your mobile device
-2. [https://expo.dev/@digthedill/asteroids]
+2. https://expo.dev/@digthedill/asteroids
 
 #### Other
 
