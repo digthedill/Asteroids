@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import {
   FlatList,
@@ -15,12 +15,12 @@ import LoadingScreen from "./components/LoadingScreen";
 import Asteroid from "./components/Asteroid";
 import DateInput from "./components/DateInput";
 
-import { today, formatDate, prettifyDate } from "./utils/dates";
+import { formatDate, prettifyDate } from "./utils/dates";
 import collectData from "./utils/getData";
 import { AsteroidType } from "./utils/types";
 
 export default function App() {
-  const [date, setDate] = useState(today);
+  const [date, setDate] = useState(new Date());
   const [showDate, setShowDate] = useState(false);
   const [asteroids, setAsteroids] = useState([]);
   const [loading, setLoading] = useState(true);

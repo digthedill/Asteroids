@@ -29,6 +29,7 @@
       "favicon": "./assets/favicon.png"
     },
     "description": "",
-    "userInterfaceStyle": "automatic"
+    "userInterfaceStyle": "automatic",
+    "githubUrl": "https://github.com/digthedill/Asteroids"
   }
 }

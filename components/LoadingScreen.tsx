@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Text, StyleSheet, Animated } from "react-native";
 import {
   PressStart2P_400Regular,

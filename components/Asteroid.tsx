@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { Text, StyleSheet, Animated, View } from "react-native";
 import prettifyNumber from "../utils/prettifyNumber";
 import { AsteroidType } from "../utils/types";

@@ -1,7 +1,3 @@
-import moment from "moment";
-
-const today = new Date();
-
 const formatDate = (date: Date) => {
   const month = date.getUTCMonth() + 1; //months from 1-12
   const day = date.getUTCDate();
@@ -10,7 +6,11 @@ const formatDate = (date: Date) => {
 };
 
 const prettifyDate = (date: Date) => {
-  return moment(date).format("LL");
+  return date.toLocaleDateString("defualt", {
+    month: "long",
+    day: "numeric",
+    year: "2-digit",
+  });
 };
 
-export { today, formatDate, prettifyDate };
+export { formatDate, prettifyDate };
